@@ -1,0 +1,27 @@
+<%- include("partials/Header.ejs") %>
+
+<div class="main wrapper container">
+  <h1 class="mb-3">Create New Blog</h1>
+
+  <form action="/compose" method="post">
+    <div class="form-group">
+      <input
+        type="text"
+        name="title"
+        placeholder="Enter Blog Title..."
+        class="form-control"
+      />
+    </div>
+    <div class="form-group">
+      <textarea
+        name="content"
+        class="form-control"
+        placeholder="Enter Blog Content..."
+      ></textarea>
+    </div>
+
+    <button class="btn btn-block btn-danger">Add New Blog</button>
+  </form>
+</div>
+
+<%- include("partials/Footer.ejs") %>
